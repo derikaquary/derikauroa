@@ -51,7 +51,9 @@ const CardVideo = ({
             }
           }}
           onError={(error) => console.log("Failed to load video:", error)}
-          onLoad={() => console.log("Video loaded successfully:", item.video)}
+          onLoad={(item) =>
+            console.log("Video loaded successfully:", item.video)
+          }
         />
       ) : (
         <TouchableOpacity
