@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { getCurrentUser } from "../lib/appwrite";
+import { getCurrentUser, signOut } from "../lib/appwrite";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const GlobalContext = createContext();
